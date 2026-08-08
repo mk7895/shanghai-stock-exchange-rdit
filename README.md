@@ -1,15 +1,16 @@
 # Multiple-Cutoff RDiT on the Shanghai Stock Exchange
 
-Independent empirical research code for my bachelor thesis, *Multiple Cutoffs
-Regression Discontinuity in Time Analysis of Major Events Effects on the
-Shanghai Stock Exchange*.
+This repository contains the Stata workflow for my NYU bachelor’s thesis on how
+major events affected Shanghai Stock Exchange securities. The public scripts
+comprise more than 1,200 lines of Stata code and form part of a wider analysis
+of approximately 0.5 GB of licensed daily market data.
 
-## Project idea
+## Research question and design
 
 The project develops a rolling-window fixed-effects Regression Discontinuity in
 Time workflow to identify potentially important market dates and then estimate
 multi-cutoff effects. It studies the Shanghai Stock Exchange across a long panel
-of listed securities and uses Stata for data construction, estimation, and
+of listed securities and uses Stata for data construction, estimation and
 output generation.
 
 ## Public source files
@@ -20,24 +21,19 @@ output generation.
 - `new_reg2.do` — multi-treatment estimation
 - `new_reg3.do` — higher-polynomial robustness analysis
 
-Simulation scripts, intermediate datasets, generated tables and figures, local
-IDE state, and archived code are deliberately excluded.
+## Main findings
 
-## Data availability
+- Monte Carlo simulations recovered the underlying discontinuities close to
+  their specified effects, while distant false positives were generally
+  economically small.
+- Single-treatment and multi-treatment estimates frequently differed
+  materially, indicating that isolated event analysis can absorb the effects
+  of neighbouring events.
+- The procedure identified seven relevant dates during 2020—the highest number
+  in the periods examined—with the initial COVID-19 shock followed by a
+  substantial market rebound.
 
-No raw or derived data are included. The research uses data obtained through
-Wind Financial Terminal and CSMAR, whose licences do not permit treating the
-files as ordinary open-source repository assets. The code is therefore shared
-for methodological transparency, not as a one-command public replication
-package.
+## Data and replication
 
-## Reproducibility note
-
-Running the analysis requires Stata plus authorised access to the original data.
-The scripts also reflect the research environment used for the submitted
-project. No claim is made that a fresh clone can reproduce the paper without
-those licensed inputs.
-
-The submitted code is preserved unchanged, so anyone
-reusing the method should verify that convention against the intended research
-design.
+The underlying Wind and CSMAR market data cannot be redistributed. Running the
+analysis requires Stata and authorised access to those source datasets.
