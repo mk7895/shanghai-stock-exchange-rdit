@@ -1,0 +1,21 @@
+# Fail-closed public-repository allowlist for the bachelor-thesis project.
+# Everything is private/ignored unless it is explicitly allowed below.
+*
+
+# Repository documentation
+!.gitignore
+!README.md
+!LICENSE
+!LICENSE.md
+
+# Core empirical Stata source selected for the portfolio
+!new_main.do
+!new_merger.do
+!new_reg1.do
+!new_reg2.do
+!new_reg3.do
+
+# Optional user-authored paper only. Never place source datasets here.
+!paper/
+!paper/*.pdf
+
