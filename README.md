@@ -36,4 +36,6 @@ output generation.
 ## Data and replication
 
 The underlying Wind and CSMAR market data cannot be redistributed. Running the
-analysis requires Stata and authorised access to those source datasets.
+analysis requires Stata and authorised access to those source datasets. Launch
+`new_main.do` from the repository root so its relative project path resolves
+correctly.

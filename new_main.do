@@ -1,6 +1,6 @@
 cls
 clear all
-global user_dir "/Users/mateuszklepacki/Desktop/advanced_econ/Final"
+global user_dir "."
 //do "${user_dir}/new_simulation_model.do"
 global before_date 60
 global after_date 30
