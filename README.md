@@ -38,7 +38,6 @@ The scripts also reflect the research environment used for the submitted
 project. No claim is made that a fresh clone can reproduce the paper without
 those licensed inputs.
 
-The thesis text and `new_reg1.do` appear to describe the pre/post event-window
-ordering differently. The submitted code is preserved unchanged, so anyone
+The submitted code is preserved unchanged, so anyone
 reusing the method should verify that convention against the intended research
 design.
